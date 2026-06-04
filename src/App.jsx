@@ -30,7 +30,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/login" element={<Login />} />
-          
+
           <Route element={
             <ProtectedRoute>
               <DashboardLayout />
@@ -44,7 +44,7 @@ function App() {
             <Route path="/surveys/import" element={<ImportSurvey />} />
             <Route path="/users" element={<UsersList />} />
           </Route>
-          
+
           <Route path="/attempts/:attemptId/take" element={
             <ProtectedRoute>
               <TakeSurvey />
